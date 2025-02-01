@@ -22,8 +22,8 @@ then
 fi
 
 # get URL to package based on major.minor version; for information on this url API, see https://github.com/mbentley/docker-omada-controller-url
-OMADA_URL="$(wget -q -O - "https://omada-controller-url.mbentley.net/hooks/omada_ver_to_url?omada-ver=${INSTALL_VER}")"
-
+#OMADA_URL="$(wget -q -O - "https://omada-controller-url.mbentley.net/hooks/omada_ver_to_url?omada-ver=${INSTALL_VER}")"
+OMADA_URL="https://static.tp-link.com/upload/software/2025/202501/20250109/Omada_SDN_Controller_v5.15.8.2_linux_x64.tar.gz"
 # make sure OMADA_URL isn't empty
 if [ -z "${OMADA_URL}" ]
 then
